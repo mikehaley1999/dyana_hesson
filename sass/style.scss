@@ -1,0 +1,91 @@
+/*
+	Theme Name:	Gallery Pro
+	Theme URI: http://my.studiopress.com/themes/gallery/
+	Description:
+	Author: Bloom Blog Shop
+	Author URI: http://www.bloomblogshop.com
+
+	Version: 1.1
+
+	Tags: black, white, serif, one-column, two-column, three-column, responsive-layout, custom-menu, full-width-template, sticky-post, theme-options, threaded-comments, translation-ready, accessibility-ready
+
+	Template: genesis
+	Template Version: 2.3
+
+	License: GPL-2.0+
+	License URI: http://www.opensource.org/licenses/gpl-license.php
+
+*/
+
+/* # Table of Contents
+- Resets
+	- Baseline Normalize
+	- Box Sizing
+	- Float Clearing
+	- Utility
+- Defaults
+	- Typographical Elements
+	- Objects
+	- Gallery
+	- Forms
+	- Tables
+	- Screen Reader Text
+- Structure and Layout
+	- Site Containers
+	- Grid
+	- Alignment
+	- Background Images
+	- Buttons
+	- Colors
+	- Selection
+	- Icons
+	- Links
+- Common Classes
+	- Search Form
+	- Posts
+	- Lists
+	- Excerpt
+	- Author Box
+	- Avatar
+	- Comments
+	- Pricing Table
+- Site Header
+	- Logo
+	- Headhesive
+	- Before Header
+- Site Navigation
+	- WooCommerce Account Nav
+	- Responsive Nav
+	- Pagination
+	- Post Navigation
+- Mixins
+	- Transitions
+- Widgets
+	- Front Page
+- Plugins
+	- Genesis Slider
+	- Genesis Enews
+	- Genesis Simple Share
+	- Instagram Widget
+	- WooCommerce
+- Site Footer
+- Pages
+*/
+
+// Modules and Variables
+@import "bourbon/_bourbon.scss";
+
+// Partials
+@import "partials/_reset.scss";
+@import "partials/_defaults.scss";
+@import "partials/_structure-layout.scss";
+@import "partials/_common-classes.scss";
+@import "partials/_site-header.scss";
+@import "partials/_site-navigation.scss";
+@import "partials/_mixins.scss";
+@import "partials/_widgets";
+@import "partials/_plugins";
+@import "partials/_site-footer.scss";
+@import "partials/_pages.scss";
+
+

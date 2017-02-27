@@ -1,0 +1,427 @@
+/* Search
+ * ========================================================================== */
+
+.search-form {
+	overflow: hidden;
+}
+
+.search-form input {
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+.search-form input[type="submit"] {
+	border: 0;
+	clip: rect(0, 0, 0, 0);
+	height: 1px;
+	margin: -1px;
+	padding: 0;
+	position: absolute;
+	width: 1px;
+}
+
+.sidebar .search-form input[type="submit"] {
+	margin: 2rem 0;
+}
+
+/* Posts
+ * ========================================================================== */
+
+.entry {
+	margin-bottom: 1rem;
+}
+
+.blog .entry,
+.page .entry,
+.search .entry,
+.sidebar .entry,
+.archive .entry,
+.single .entry {
+	margin-bottom: 3rem;
+  padding-bottom: 3rem;
+  overflow: hidden;
+}
+
+.single .entry {
+  width: 100%;
+  text-align: left;
+}
+
+.blog .entry-title,
+.search .entry-title,
+.archive .entry-title {
+  width: 100%;
+}
+
+.blog .entry-content p:last-child,
+.search .entry-content p:last-child,
+.archive .entry-content p:last-child {
+  margin-bottom: 0;
+}
+
+.entry-content .more-link {
+  background: transparent;
+  box-shadow: none;
+  padding: 0;
+  color: #333;
+}
+
+.entry-header {
+  margin-bottom: 2rem;
+  overflow: hidden;
+}
+
+.post-type-archive-portfolio .archive-title,
+.post-type-archive-product .page-title,
+.full-width-content .entry-header,
+.single-portfolio .entry-header,
+.genesis-pro-portfolio .entry-header {
+  text-align: center;
+}
+
+.entry-header .entry-title {
+  margin: 0;
+}
+
+.entry-header p.entry-meta {
+  padding: 1rem 0;
+  margin: 0;
+}
+
+.entry-header p.entry-meta > * {
+  padding: 1rem 1.5rem;
+  margin-left: -.5rem;
+  display: inline-block;
+  border-right: 1px solid #e5e5e5;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.entry-header p.entry-meta > *:first-child {
+  padding-left: 0;
+  margin-left: 0;
+}
+
+.entry-header p.entry-meta > *:last-child {
+    border-right: 0;
+    padding-right: 0;
+}
+
+.hero .entry-header p.entry-meta,
+.hero .entry-header p.entry-meta > * {
+  border-color: rgba(255,255,255,0.3);
+}
+
+.entry-title a {
+  text-decoration: none;
+}
+
+.single p.intro {
+  padding-bottom: 2rem;
+  margin-bottom: 2rem;
+}
+
+.entry .entry-image {
+  display: block;
+  margin-bottom: 2rem;
+}
+
+.entry-content ol,
+.entry-content p,
+.author-box p,
+.entry-content ul,
+.entry-content .wp-video,
+.entry-content .wp-audio-shortcode,
+.entry-content .video-player,
+.quote-caption {
+	margin-bottom: 2rem;
+}
+
+.entry-footer {
+	margin: 3rem 0 0;
+}
+
+@media only screen and (max-width: 540px) {
+
+  .entry-header .entry-title {
+    margin-top: 2rem;
+  }
+
+  .entry-header {
+    display: inline-block;
+    width: 100%;
+  }
+
+}
+
+
+@media only screen and (min-width: 540px) {
+
+  .entry .entry-image.alignleft,
+  .entry .entry-image.alignright {
+    max-width: 100%;
+  }
+}
+
+/* Lists
+ * ========================================================================== */
+
+.entry-content ol,
+.entry-content ul {
+  margin-left: 4rem;
+}
+
+.entry-content ol li:not(.comment) {
+  list-style-type: decimal;
+}
+
+.entry-content ul li {
+  list-style-type: disc;
+}
+
+.entry-content ol ol,
+.entry-content ul ul {
+  margin-bottom: 0;
+}
+
+.entry-content ul.list-unstyled,
+.entry-content ol.list-unstyled {
+  margin-left: 2rem;
+}
+
+.entry-content ul.list-unstyled > li,
+.entry-content ol.list-unstyled > li,
+.entry-content .gform_wrapper ul li {
+  list-style: none;
+}
+
+/* Excerpt
+ * ========================================================================== */
+
+.manual-excerpt {
+  display: inline-block;
+  width: 100%;
+  margin: 4rem 0;
+
+}
+
+/* Author Box
+ * ========================================================================== */
+
+.author-box {
+  padding: 3rem;
+  margin-bottom: 4rem;
+  background: #fff;
+  text-align: center;
+}
+
+.author.archive .author-box {
+  margin-bottom: 4rem;
+}
+
+.author-box-content {
+  margin: 0 auto 2rem;
+  max-width: 34rem;
+}
+
+/* Avatar
+ * ========================================================================== */
+
+.avatar {
+  border-radius: 50%;
+  float: left;
+  border: 0 !important;
+  background: #fff !important;
+  padding: 0 !important;
+}
+
+.author-box .avatar,
+body.woocommerce-page img.avatar {
+  float: none;
+  border-radius: 4rem;
+  max-width: 8rem;
+  margin-bottom: 2rem;
+}
+
+.after-entry .avatar {
+  float: right;
+  height: 18rem;
+  width: 18rem;
+  margin-bottom: 4rem;
+  margin-left: 4rem;
+}
+
+.alignleft .avatar {
+  margin-right: 4rem;
+}
+
+.alignright .avatar {
+  margin-left: 4rem;
+}
+
+.comment .avatar {
+  margin: 0 2rem 3rem 0;
+}
+
+/* Comments
+ * ========================================================================== */
+
+.entry-pings,
+.comment-respond,
+.entry-comments {
+  margin: 4rem auto;
+}
+
+.comment-respond input {
+  width: 100%;
+  display: block;
+}
+
+p.comment-meta,
+.entry-comments .comment,
+.entry-comments .comment-reply {
+  margin-bottom: 4rem;
+}
+
+.entry-pings .reply {
+  display: none;
+}
+
+.entry-comments .comment {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.entry-comments .comment:last-child {
+  margin-bottom: 0;
+}
+
+p.comment-form-comment {
+  margin-bottom: 2rem;
+}
+
+p.form-submit,
+.entry-comments .children .comment,
+.entry-comments .comment-author {
+  margin: 0;
+}
+
+.entry-comments .comment {
+  clear: both;
+}
+
+.entry-comments .children .comment {
+  border: none;
+}
+
+.comment-list li {
+  list-style-type: none;
+}
+
+.comment-list ul.children {
+  margin-left: 4rem;
+}
+
+/* Pricing Table
+ * ========================================================================== */
+
+.pricing-table,
+.pricing-table > * {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.pricing-table > * {
+  align-self: stretch;
+}
+
+.pricing-table > * > * {
+  align-self: stretch;
+  flex-grow: 1;
+  width: 100%;
+}
+
+.pricing-table .plan {
+  box-shadow: inset 0 0 0 1px #e5e5e5;
+  text-align: center;
+  padding: 4rem 2rem 2rem;
+  margin: 0 0 4rem;
+  width: 100%;
+  position: relative;
+}
+
+.pricing-table .plan em {
+  opacity: .65;
+  margin-bottom: 2rem;
+  display: block;
+}
+
+.pricing-table .plan h3 span {
+  font-size: .66em;
+}
+
+.pricing-table .plan ul {
+  margin: 0 0 4rem;
+  line-height: 2;
+}
+
+.pricing-table .plan ul li {
+  list-style: none;
+}
+
+.pricing-table .plan p {
+  padding-left: 2rem;
+  padding-right: 2rem;
+  z-index: 3;
+  align-self: flex-end;
+}
+
+.pricing-table .plan.featured {
+  background: #fff;
+  box-shadow: 0 0 0 2px #000;
+  z-index: 2;
+}
+
+@media only screen and (min-width: 800px) {
+
+  .pricing-info {
+    padding-top: 8rem;
+  }
+
+  .pricing-table .plan {
+    margin-bottom: 4rem !important;
+  }
+
+  .pricing-table .plan.one-fourth {
+    width: 50%;
+    margin: -1px 0 0 -1px;
+  }
+
+  .pricing-table .plan.one-fourth:first-child,
+  .pricing-table .plan.one-fourth:nth-child(3) {
+    margin-left: 0;
+  }
+
+  .pricing-table .plan.one-third {
+    width: 33%;
+    margin: 0 0 0 -1px;
+  }
+
+  .pricing-table .plan.one-third:first-child {
+    margin-left: 0;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+
+  .pricing-table .plan.one-fourth {
+    width: 25%;
+    margin: 0 0 0 -1px;
+  }
+
+  .pricing-table .plan.one-fourth:first-child {
+    margin-left: 0;
+  }
+
+  .pricing-table .plan.one-fourth:nth-child(3) {
+    margin-left: -1px;
+  }
+}

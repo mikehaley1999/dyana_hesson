@@ -1,0 +1,119 @@
+/* Site Header
+ * ========================================================================== */
+
+.site-header {
+	width: 100%;
+	padding: 0 0 1rem;
+	position: relative;
+  	text-align: center;
+}
+
+.site-title {
+  margin: 0;
+  font-style: normal;
+  font-weight: 700;
+}
+
+.title-area {
+  margin: 0;
+}
+
+.site-title a {
+  text-decoration: none;
+}
+
+.header-image .site-description,
+.header-image .site-title a {
+	display: block;
+	text-indent: -9999px;
+}
+
+/* Logo, hide text */
+
+.header-image .site-header a {
+  background-size: contain !important;
+	background-position: center !important;
+}
+
+.header-image .site-title a {
+	float: none;
+	min-height: 17rem;
+	width: 100%;
+  max-width: 40rem;
+  margin: 0 auto;
+}
+
+/* Headhesive */
+
+.headhesive {
+	display: none;
+}
+
+@media only screen and (min-width: 1024px) {
+
+	.headhesive {
+	  	position: fixed;
+	  	top: 0;
+	  	width: 100%;
+	  	line-height: .5rem;
+        padding: 0;
+	  	display: block;
+	  	background: rgba(255,255,255,1);
+	  	transform: translateY(-100%);
+	  	-webkit-transform: translateY(-100%);
+	  	-moz-transform: translateY(-100%);
+	  	transition: all 150ms ease-out;
+	  	-webkit-transition: all 150ms ease-out;
+	  	-moz-transition: all 150ms ease-out;
+	  	z-index: 999;
+	}
+
+	.headhesive--stick {
+	  	transform: translateY(0%);
+	  	-webkit-transform: translateY(0%);
+	  	-moz-transform: translateY(0%);
+	}
+
+	.headhesive .title-area {
+		display: none;
+	}
+
+	.headhesive .nav-secondary,
+  .headhesive .nav-secondary .wrap {
+    padding: 0;
+    margin: 0;
+	}
+
+  .headhesive .nav-secondary > .genesis-nav-menu li a,
+  .headhesive .title-area {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+
+  .headhesive .genesis-nav-menu {
+    text-align: center;
+  }
+
+}
+
+/* Before Header
+ * ========================================================================== */
+
+.before-header {
+  display: inline-block;
+  width: 100%;
+  overflow: hidden;
+}
+
+.before-header .jr-insta-slider {
+	padding: 0;
+  margin: 0;
+	width: 100%;
+  display: none;
+}
+
+@media only screen and (min-width: 800px) {
+  .before-header .jr-insta-slider {
+    display: block;
+  }
+}

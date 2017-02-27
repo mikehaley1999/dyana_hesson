@@ -1,0 +1,587 @@
+/* Site Layout
+ * ========================================================================== */
+
+.site-container {
+	overflow: hidden;
+}
+
+.wrap {
+	padding: 0 2rem;
+}
+
+.site-inner {
+	clear: both;
+	padding: 4rem 0;
+}
+
+.full-width-content .content,
+.single-portfolio .content,
+.genesis-pro-portfolio .content,
+.woocommerce-page.full-width-content .content {
+  max-width: 100%;
+  width: 100%;
+}
+
+.bbs-landing .content,
+body.woocommerce-account .woocommerce-MyAccount-content,
+body.woocommerce-account .entry-content .woocommerce {
+  max-width: 80rem;
+  margin: 0 auto;
+  float: none;
+}
+
+.sidebar-primary {
+  margin-top: 4rem;
+}
+
+@media only screen and (min-width: 1024px) {
+
+	.wrap {
+		margin: 0 auto;
+		max-width: 114rem;
+	}
+
+  .content-sidebar-sidebar .content-sidebar-wrap,
+  .sidebar-content-sidebar .content-sidebar-wrap,
+  .sidebar-sidebar-content .content-sidebar-wrap {
+    width: 75%;
+  }
+
+  .content-sidebar-sidebar .content-sidebar-wrap {
+	  float: left;
+  }
+
+  .sidebar-content-sidebar .content-sidebar-wrap,
+  .sidebar-sidebar-content .content-sidebar-wrap {
+	  float: right;
+  }
+
+  /* Content */
+
+  .content {
+  	float: right;
+  	width: 65%;
+  }
+
+  .content-sidebar .content,
+  .content-sidebar-sidebar .content,
+  .sidebar-content-sidebar .content {
+  	float: left;
+  }
+
+  .content-sidebar-sidebar .content,
+  .sidebar-content-sidebar .content,
+  .sidebar-sidebar-content .content {
+  	width: 65%;
+  }
+
+  /* Primary Sidebar */
+
+  .sidebar-primary {
+    margin-top: 0;
+  	float: right;
+  	width: 25%;
+  }
+
+  .sidebar-content .sidebar-primary,
+  .sidebar-sidebar-content .sidebar-primary {
+  	float: left;
+  }
+
+  .sidebar-sidebar-content .sidebar-primary,
+  .sidebar-content-sidebar .sidebar-primary,
+  .content-sidebar-sidebar .sidebar-primary {
+    width: 30%;
+  }
+
+  /* Secondary Sidebar */
+
+  .sidebar-secondary {
+  	float: left;
+  	width: 20%;
+  }
+
+  .content-sidebar-sidebar .sidebar-secondary {
+  	float: right;
+  }
+
+}
+
+/* Grid
+ * ========================================================================== */
+
+@media only screen and (min-width: 800px) {
+
+	.grid,
+	[class*="grid-"],
+	.equal-heights > * {
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	.grid > *,
+	[class*="grid-"] > * {
+		align-self: stretch;
+	}
+
+	.equal-heights > * > * {
+		align-self: stretch;
+		flex-grow: 1;
+		width: 100%;
+	}
+
+	.five-sixths,
+	.four-sixths,
+	.four-fifths,
+	.one-fifth,
+	.one-fourth,
+	.footer-widgets .widget-area,
+	.one-half,
+	.one-sixth,
+	.one-third,
+	.three-fourths,
+	.three-fifths,
+	.three-sixths,
+	.two-fourths,
+	.two-fifths,
+	.two-sixths,
+	.two-thirds {
+		float: left;
+		margin-left: 3.448275862069%;
+	}
+
+	.one-half,
+	.three-sixths,
+	.two-fourths {
+		width: 48.275862068966%;
+	}
+
+	.one-third,
+	.two-sixths,
+  .footer-widgets .widget-area {
+		width: 28.034483%;
+	}
+
+	.four-sixths,
+	.two-thirds {
+		width: 65.51724137931%;
+	}
+
+	.one-fourth {
+		width: 22.413793103448%;
+	}
+
+	.three-fourths {
+		width: 74.137931034483%;
+	}
+
+	.one-fifth {
+		width: 17.241379310345%;
+	}
+
+	.two-fifths {
+		width: 37.931034482759%;
+	}
+
+	.three-fifths {
+		width: 58.620689655172%;
+	}
+
+	.four-fifths {
+		width: 79.310344827586%;
+	}
+
+	.one-sixth {
+		width: 13.793103448276%;
+	}
+
+	.five-sixths {
+		width: 82.758620689655%;
+	}
+
+	.first,
+	.footer-widgets .widget-area:first-child {
+		clear: both;
+		margin-left: 0;
+	}
+
+	.only {
+		float: none;
+		margin: 0 auto;
+	}
+}
+
+/* Alignment
+ * ========================================================================== */
+
+a.aligncenter img {
+	display: block;
+	margin: 0 auto;
+}
+
+a.alignnone {
+	display: inline-block;
+}
+
+.alignleft {
+	float: left;
+	text-align: left;
+}
+
+.alignright {
+	float: right;
+	text-align: right;
+}
+
+img.centered,
+.aligncenter {
+	display: block;
+	margin: 0 auto 3rem;
+}
+
+img.alignnone,
+.alignnone {
+	margin-bottom: 2rem;
+}
+
+a.alignleft,
+img.alignleft,
+.wp-caption.alignleft {
+	margin: 0 6rem 4rem 0;
+}
+
+a.alignright,
+img.alignright,
+.wp-caption.alignright {
+	margin: 0 0 4rem 6rem;
+}
+
+img.alignleft.entry-image,
+img.alignright.entry-image {
+	margin-bottom: 0;
+}
+
+.entry-content figure {
+	margin: 6rem 0 5rem;
+}
+
+.wp-caption-text {
+	text-align: center;
+}
+
+.entry-content p.wp-caption-text {
+	margin-bottom: 0;
+}
+
+.gallery-caption,
+.entry-content .gallery-caption {
+	margin: 0.5rem !important;
+  width: calc(100% - 1rem) !important;
+}
+
+.wp-audio-shortcode,
+.wp-playlist,
+.wp-video {
+	margin-bottom: 3rem;
+}
+
+a[rel~="attachment"],
+a[rel~="attachment"]:hover,
+.gallery-item a,
+.wp-audio-shortcode a,
+.wp-audio-shortcode a:hover,
+.wp-caption a,
+.wp-caption a:hover,
+.wp-playlist a,
+.wp-playlist a:hover,
+.wp-video a,
+.wp-video a:hover {
+	border-width: 0 !important;
+}
+
+/* Background Images
+ * ========================================================================== */
+
+.bg {
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.bg:after {
+	-ms-filter: "alpha(Opacity=90)";
+	filter: alpha(opacity=90);
+	opacity: 0.90;
+}
+
+.bg-scrim,
+.bg-scrim a {
+	color: #fff;
+}
+
+[class*="bg-"],
+[class*="bg-"] .wrap {
+	position: relative;
+	z-index: 2;
+}
+
+.bg-scrim:after {
+	content: " ";
+	display: block;
+	position: relative;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: 0;
+	background: white;
+	opacity: 1;
+}
+
+/* Buttons
+ * ========================================================================== */
+
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"],
+.button,
+a.button,
+.pagination a,
+body.woocommerce-page nav.woocommerce-pagination ul li a,
+body.woocommerce-page nav.woocommerce-pagination ul li span,
+body.woocommerce-page #respond input#submit,
+body.woocommerce-page a.button,
+body.woocommerce-page button.button,
+body.woocommerce-page button.button.alt,
+body.woocommerce-page a.button.alt,
+body.woocommerce-page input.button,
+body.woocommerce-page input.button.alt,
+body.woocommerce-page input.button:disabled,
+body.woocommerce-page input.button:disabled[disabled] {
+  border-radius: 0;
+  border: 0;
+  text-shadow: none;
+  color: #ffffff;
+  line-height: 1;
+  display: inline-block;
+  outline: none;
+  text-align: center;
+  padding: 1.5rem 2rem;
+  text-decoration: none;
+  width: auto;
+  white-space: nowrap;
+}
+
+button:hover,
+input:hover[type="button"],
+input:hover[type="reset"],
+input:hover[type="submit"],
+.button:hover,
+body.woocommerce-page #respond input#submit:hover,
+body.woocommerce-page a.button:hover,
+body.woocommerce-page button.button:hover,
+body.woocommerce-page button.button.alt:hover,
+body.woocommerce-page a.button.alt:hover,
+body.woocommerce-page input.button:hover,
+body.woocommerce-page input.button.alt:hover {
+  box-shadow: inset 0 0 20rem rgba(0,0,0,0.2);
+	text-decoration: none;
+	opacity: 1;
+  color: #ffffff;
+}
+
+.button.outline {
+  background: transparent;
+}
+
+.button.light,
+.button.light:hover {
+  background: #f2f2f2;
+  color: #333;
+}
+
+.button.white,
+.pagination a,
+body.woocommerce-page nav.woocommerce-pagination ul li a,
+body.woocommerce-page nav.woocommerce-pagination ul li span {
+  color: #333333;
+  background: #ffffff;
+}
+
+.button.white:hover,
+.pagination a:hover
+.button.light:hover,
+.pagination a:hover,
+body.woocommerce-page nav.woocommerce-pagination ul li a:hover {
+  color: #ffffff;
+}
+
+.button.small {
+	padding: 1rem 2rem;
+}
+
+.button.full-width {
+	display: block;
+	width: 100%;
+}
+
+.button.arrow-left:before,
+.button.arrow-right:after,
+.pagination-previous a:before,
+.pagination-next a:after {
+	font-family: Ionicons;
+	vertical-align: top;
+}
+
+.button.arrow-right:after,
+.pagination-next a:after {
+	content: "\f30f";
+	margin-left: .8rem;
+}
+
+.button.arrow-right:hover:after,
+.pagination-next a:hover:after {
+	margin-left: 1.2rem;
+	margin-right: -0.4rem;
+}
+
+.button.arrow-left:before,
+.pagination-previous a:before {
+	content: "\f2ca";
+	margin-right: .8rem;
+}
+
+.button.arrow-left:hover:before,
+.pagination-previous a:hover:before {
+	margin-right: 1.2rem;
+	margin-left: -0.4rem;
+}
+
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button {
+	display: none;
+}
+
+/* Colors
+ * ========================================================================== */
+
+/* Dark */
+
+a,
+body,
+.genesis-nav-menu a,
+.entry-title a,
+.site-title a,
+.site-title a:hover,
+.button.light,
+.featured-content article.has-post-thumbnail .entry-title a,
+.pagination a,
+body.woocommerce-page nav.woocommerce-pagination ul li a,
+body.woocommerce-page nav.woocommerce-pagination ul li span,
+body.woocommerce-page .woocommerce-message::before,
+body.woocommerce-page .woocommerce-info::before,
+body.woocommerce-page div.product p.price,
+body.woocommerce-page div.product span.price,
+body.woocommerce-page ul.products li.product .price,
+body.woocommerce-page form .form-row .required,
+.woocommerce-MyAccount-navigation li a,
+.button.outline,
+.pagination li.active a,
+body.woocommerce-page nav.woocommerce-pagination ul li span.current {
+  color: #333333;
+  color: rgba(0,0,0,0.75);
+}
+
+
+/* Accent */
+
+.entry-content a:not(.button),
+a:hover,
+.genesis-nav-menu a:hover,
+.genesis-nav-menu .current-menu-item > a,
+.entry-title a:hover,
+.button.white,
+.woocommerce-MyAccount-navigation li a:hover,
+.woocommerce-MyAccount-navigation li.is-active a {
+  color: #91c3ba;
+}
+
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"],
+.button,
+a.button,
+.button.outline:hover,
+.button.white:hover,
+.pagination a:hover,
+.button.light:hover,
+body.woocommerce-page nav.woocommerce-pagination ul li a,
+body.woocommerce-page nav.woocommerce-pagination ul li span,
+body.woocommerce-page #respond input#submit,
+body.woocommerce-page a.button,
+body.woocommerce-page button.button,
+body.woocommerce-page button.button.alt,
+body.woocommerce-page a.button.alt,
+body.woocommerce-page input.button,
+body.woocommerce-page input.button.alt,
+body.woocommerce-page input.button:disabled,
+body.woocommerce-page input.button:disabled[disabled],
+body.woocommerce-page nav.woocommerce-pagination ul li a:hover,
+body.woocommerce-page #respond input#submit:hover,
+body.woocommerce-page a.button:hover,
+body.woocommerce-page button.button:hover,
+body.woocommerce-page button.button.alt:hover,
+body.woocommerce-page a.button.alt:hover,
+body.woocommerce-page input.button:hover,
+body.woocommerce-page input.button.alt:hover,
+body.woocommerce div.product .woocommerce-tabs ul.tabs li a:hover {
+  background-color: #91c3ba;
+}
+
+::-moz-selection { color: #fff; background-color: #91c3ba; }
+::selection { color: #fff; background-color: #91c3ba; }
+
+input:focus,
+select:focus,
+textarea:focus {
+  border-color: #91c3ba;
+}
+
+.button.outline,
+.button.outline:hover,
+body.woocommerce div.product .woocommerce-tabs ul.tabs li.active a,
+body.woocommerce div.product .woocommerce-tabs ul.tabs li a:hover,
+.pagination li.active a,
+body.woocommerce-page nav.woocommerce-pagination ul li span.current {
+  box-shadow: inset 0 -1px 0 0 #91c3ba;
+}
+
+/* Selection
+ * ========================================================================== */
+
+::-moz-selection,
+::selection {
+	color: #fff;
+}
+
+/* Icons
+ * ========================================================================== */
+
+.icon {
+	font-size: 3rem;
+	margin: 0 auto;
+}
+
+/* Links
+ * ========================================================================== */
+
+a {
+	text-decoration: none;
+	outline: 0;
+}
+
+a:hover {
+	text-decoration: underline;
+}

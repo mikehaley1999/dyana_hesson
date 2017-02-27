@@ -1,0 +1,1185 @@
+//( the omission of footer-widgets on a per page basis was due to conditional tag errors with multiple plugins, Widget Logic, Jetpack, Display Widgets - After the conditional was set, the Customizer wouldn't show widget areas on the front-end )
+
+/* FRONT PAGE
+-----------------------------------------------------------------------------------------------*/
+body.home.page-template-default {
+
+    .after-footer {
+        display: none;
+    }
+
+    .footer-widgets {
+        padding: 0;
+    }
+
+    .footer-widgets .widget-area {
+        margin: 4rem auto 0;
+    }
+
+    .footer-widgets-1.widget-area {
+        width: 100%;
+    }
+
+    .footer-widgets-2.widget-area, .footer-widgets-3.widget-area {
+        display: none;
+    }
+
+}
+.front-page-1 {
+    padding: 0 0 2em;
+}
+
+.metaslider .slides img {
+    width: 95%;
+    display: block;
+    margin: 0 auto;
+}
+
+/* ABOUT PAGE
+-----------------------------------------------------------------------------------------------*/
+body.about-page {
+	.wrap {
+		max-width:104rem;
+	}
+    .footer-widgets-1, .footer-widgets-2 {
+        display: none;
+    }
+}
+
+.about-dyana {
+    max-width: 50rem;
+    color: grey;
+    text-align: center;
+    border-bottom: 1px solid grey;
+    h1 {
+        font-family: Open Sans, "Avenir", "Helvetica", arial;
+        font-style: normal;
+    }
+}
+
+.about-page p {
+    line-height: 4rem;
+}
+
+.about-row-1 {
+    display: inline-block;
+    position: relative;
+    margin: 5em auto 0;
+    padding: 2em 1em;
+    width: 100%;
+    height: auto;
+    line-height: 22;
+    border-bottom: 1px solid grey;
+    @media #{$tablet}{
+        padding: 0 0 2em;
+    }
+    .row-1-text {
+        width: 48%;
+        margin:0;
+        padding: 3rem 0;
+        margin: 0;
+            @media #{$tablet}{
+                width: 100%;
+                padding: 0 2rem;
+            }
+    }
+    .row-1-img {
+        width: 48%;
+        @media #{$tablet}{
+            width: 100%;
+            float: none;
+            text-align: center;
+            padding: 0 2rem;
+        }
+    }
+}
+
+.about-row-2, .about-row-3, .about-row-4, .about-row-5, .about-row-6, .about-row-7, .about-row-8 {
+    display: inline-block;
+    position: relative;
+    margin: 0em auto 2em;
+    padding: 1em;
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid grey;
+    .row-2-img, .row-3-img, .row-4-img, .row-5-img, .row-6-img, .row-7-img, .row-7-1-img {
+        width: 48%;
+        margin: 0;
+        @media #{$tablet}{
+            width: 100%;
+            float: none;
+            text-align: center;
+            padding: 0 0 2erm;
+        }
+    }
+    .row-2-text, .row-3-text, .row-4-text, .row-5-text, .row-6-text, .row-7-text, .row-7-1-text {
+        width: 48%;
+        margin:0;
+        padding: 4rem 0;
+        @media #{$tablet}{
+            padding: 0 2rem;
+            width: 100%;
+            float: none;
+            text-align: center;
+        }
+    }
+}
+
+.about-row-2 {
+    margin: 0 auto;
+    line-height: 18;
+}
+
+.about-row-3 {
+    margin: 0 auto;
+    padding: 0 1em;
+    line-height: 28;
+    .row-3-text {
+    @media #{$tablet}{
+        padding: 2em 2em 0em 2em;
+    }
+}
+}
+
+.about-row-4 {
+    line-height: 24;
+}
+
+.about-row-5 {
+    line-height: 20;
+    padding: 2em 1em 3em;
+    margin: 0;
+    @media #{$tablet}{
+        padding: 0 0 2em;
+    }
+}
+
+.about-row-6 {
+    margin-bottom: 0;
+    border-bottom: none;
+    line-height: 26;
+    padding: 0 1em;
+    @media #{$tablet}{
+        padding: 0;
+    }
+    .row-6-text{
+        @media #{$tablet}{
+            padding: 2em 2em 0em 2em;
+        }
+    }
+}
+
+.about-row-7 {
+    line-height: 16;
+    padding: 0 1em 4em;
+    @media #{$tablet}{
+        padding: 0 0 2rem;
+    }
+    .row-7-img, .row-7-1-img {
+        padding-bottom: 2em;
+    }
+}
+
+.about-row-8 {
+    text-align: center;
+}
+
+.about-row-9 {
+    padding: 2em;
+}
+.dh-video iframe{
+    display: block;
+    margin: 0 auto;
+}
+
+/* ARTFUL LIVING - BLOG - PAGE
+-------------------------------------------------------------------------------------------------*/
+body.blog {
+    .footer-widgets-1, .footer-widgets-2 {
+        display: none;
+    }
+}
+
+.post-image.entry-image {
+    @media #{$small}{
+        float: none;
+        margin: 0 auto;
+    }
+}
+/* EVENTS & NEWS
+-------------------------------------------------------------------------------------------------*/
+body.page-template-events-page {
+        div#genesis-footer-widgets {
+        display: none;
+    }
+}
+
+.events-title {
+    text-align: center;
+}
+
+img.alignleft.size-full.wp-image-242 {
+    margin: 0px 6rem 7rem 0;
+}
+
+#events-row-1 {
+    display: inline-block;
+    width: 100%;
+    height: auto;
+    position: relative;
+    padding: 2em;
+    border-bottom: 1px solid grey;
+
+    .events-row-1 {
+        width: 45%;
+        float: left;
+        display: block;
+        margin: 0 2.5%;
+        padding: 3em;
+        @media #{$tablet}{
+            width: 98%;
+            float: none;
+        }
+    }
+
+    .events-row-1-image {
+        width: 45%;
+        float: right;
+        display: block;
+        margin: 0 2.5%;
+        text-align: right;
+        @media #{$tablet}{
+            width: 95%;
+            float: none;
+            text-align: center;
+        }
+    }
+}
+
+#events-row-2 {
+    display: inline-block;
+    width: 100%;
+    height: auto;
+    position: relative;
+    padding: 2em;
+    border-bottom: 1px solid grey;
+
+    .events-row-2 {
+        width: 45%;
+        float: left;
+        display: block;
+        margin: 0 2.5%;
+        @media #{$tablet}{
+            width: 95%;
+            float: none;
+        }
+    }
+
+    .events-row-2-image {
+        width: 45%;
+        float: right;
+        display: block;
+        margin: 0 2.5%;
+        text-align: right;
+        @media #{$tablet}{
+            width: 95%;
+            float: none;
+            text-align: center;
+        }
+    }   
+}
+
+#events-row-3 {
+    display: inline-block;
+    width: 100%;
+    height: auto;
+    position: relative;
+    padding: 2em;
+    border-bottom: 1px solid grey;
+
+    .events-row-3-video {
+        width: 100%;
+        text-align: center;
+        display: block;
+        margin: 0 auto;
+        padding: 2em;
+    }
+
+    .events-row-3 {
+        width: 100%;
+        text-align: center;
+        display: block;
+        margin: 0 auto;
+    }
+}
+
+#events-row-4 {
+    display: inline-block;
+    width: 100%;
+    height: auto;
+    position: relative;
+    padding: 2em;
+    border-bottom: 1px solid grey;
+}
+
+#events-row-4-first {
+    display: inline-block;
+    width: 100%;
+    height: auto;
+    position: relative;
+
+    .events-row-4-image {
+        width: 29%;
+        float: left;
+        display: block;
+        margin: 0 auto;
+
+        @media #{$tablet}{
+            width: 98%;
+            float: none;
+            text-align: center;
+        }
+    }
+
+    .events-row-4 {
+        width: 65%;
+        float: left;
+        display: block;
+        margin: 0 auto;
+        text-align: left;
+        padding: 0 2em;
+
+        @media #{$tablet}{
+            width: 98%;
+            float: none;
+            padding: 2em;
+            text-align: center;
+        }
+    }
+}
+
+#events-row-4-last {
+    display: inline-block;
+    width: 100%;
+    height: auto;
+    position: relative;
+    padding-top: 0;
+
+    .events-row-4-1-image {
+        width: 31%;
+        float: left;
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+
+        @media #{$tablet}{
+            width: 98%;
+            float: none;
+            text-align: center;
+        }
+    }
+
+    .events-row-4-1 {
+        width: 68%;
+        float: left;
+        display: block;
+        margin: 0 auto;
+        text-align: left;
+        padding: 0 .7em;
+
+        @media #{$tablet}{
+            width: 98%;
+            float: none;
+            padding: 2em;
+            text-align: center;
+        }
+    }
+}
+
+#events-row-5 {
+    display: inline-block;
+    width: 100%;
+    height: auto;
+    position: relative;
+    padding: 2em 2em 0;
+
+    .events-row-5-text {
+        text-align: left;
+        float: left;
+        width: 45%;
+        margin: 0 2.5%;
+
+        @media #{$tablet}{
+            width: 95%;
+            float: none;
+            text-align: center;
+        }
+    }
+    .events-row-5-images {
+        text-align: right;
+        float: right;
+        width: 45%;
+        margin: 0 2.5%;
+
+        @media #{$tablet}{
+            width: 95%;
+            float: none;
+        }
+        ul li {
+            @media #{$tablet}{
+                width: 30%; 
+                float: left; 
+                margin: 0 1%;
+            }
+        }
+    }
+}
+
+#events-row-5-gallery, #events-row-9-gallery {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+    position: relative;
+    padding: 2em;
+    border-bottom: 1px solid grey;
+
+    ul li {
+        display: inline-block;
+        width: 14%;
+        margin: 0 1%;
+        text-align: center;
+        vertical-align: middle;
+        line-height: 12;
+
+        @media #{$tablet}{
+            width: 22%;
+        }
+        @media #{$small}{
+            width: 45%;
+        }
+    }
+}
+
+#events-row-6 {
+    display: inline-block;
+    width: 100%;
+    height: auto;
+    position: relative;
+    padding: 2em;
+    border-bottom: 1px solid grey;
+
+    .events-row-6 {
+        width: 45%;
+        float: left;
+        display: block;
+        margin: 0 2.5%;
+        padding: 2em;
+        @media #{$tablet}{
+            width: 95%;
+            float: none;
+            text-align: center;
+        }
+    }
+
+    .events-row-6-image {
+        width: 45%;
+        float: right;
+        display: block;
+        margin: 0 2.5%;
+        text-align: right;
+        padding: 2em;
+        @media #{$tablet}{
+            width: 95%;
+            float: none;
+            text-align: center;
+        }
+    }   
+}
+
+#events-row-7 {
+    display: inline-block;
+    width: 100%;
+    height: auto;
+    position: relative;
+    padding: 2em;
+    border-bottom: 1px solid grey;
+
+    .events-row-7-image {
+        width: 45%;
+        float: left;
+        display: block;
+        margin: 0 2.5%;
+        padding: 2em;
+        @media #{$tablet}{
+            width: 98%;
+            float: none;
+            text-align: center;
+        }
+    }
+
+    .events-row-7 {
+        width: 45%;
+        float: right;
+        display: block;
+        margin: 0 2.5%;
+        text-align: center;
+        padding: 2em;
+        @media #{$tablet}{
+            width: 95%;
+            float: none;
+            text-align: center;
+        }
+    }   
+}
+
+#events-row-8 {
+    display: inline-block;
+    width: 100%;
+    height: auto;
+    position: relative;
+    padding: 2em;
+    border-bottom: 1px solid grey;
+}
+
+#events-row-9 {
+    display: inline-block;
+    width: 100%;
+    height: auto;
+    position: relative;
+    padding: 2em;
+
+    .events-row-9 {
+        width: 45%;
+        float: left;
+        display: block;
+        margin: 0 2.5%;
+        @media #{$tablet}{
+            width: 98%;
+            float: none;
+        }
+    }
+
+    .events-row-9-image {
+        width: 45%;
+        float: right;
+        display: block;
+        margin: 0 2.5%;
+        text-align: center;
+        @media #{$tablet}{
+            width: 95%;
+            float: none;
+            text-align: center;
+        }
+        p.events-row-9-text {
+            @media #{$tablet}{
+                text-align: center !important;
+                float: none !important;
+            }
+        }
+    }   
+}
+
+.wp-image-387 {
+    @media#{$tablet}{
+        margin: 0 auto;
+        width: 100%;
+        display: block;
+        padding: 2em;
+    }
+}
+
+#events-row-10 {
+    display: inline-block;
+    width: 100%;
+    height: auto;
+    position: relative;
+    padding: 2em;
+    border-bottom: 1px solid grey;
+
+    .events-row-10-image {
+        width: 45%;
+        float: left;
+        display: block;
+        margin: 0 2.5%;
+        text-align: left;
+        @media #{$tablet}{
+            width: 95%;
+            float: none;
+            text-align: center;
+        }
+
+        .wp-image-417 {
+            @media #{$tablet}{
+                margin: 0 auto;
+                display: block;
+                width: 70%;
+                padding: 2em;
+                float: none;
+            }
+        }
+
+        p.description {
+            clear: both;
+        }
+    }
+    .events-row-10 {
+        width: 45%;
+        float: right;
+        display: block;
+        margin: 0 2.5%;
+        @media #{$tablet}{
+            width: 98%;
+            float: none;
+            clear: both;
+        }
+    }
+}
+
+#events-row-11 {
+    display: inline-block;
+    width: 100%;
+    height: auto;
+    position: relative;
+    padding: 2em;
+    border-bottom: 1px solid grey;
+
+    .events-row-11 {
+        width: 45%;
+        float: left;
+        display: block;
+        text-align: center;
+        margin: 0 2.5%;
+        @media #{$tablet}{
+            width: 98%;
+            float: none;
+        }
+    }
+
+    .events-row-11-image {
+        width: 45%;
+        float: right;
+        display: block;
+        margin: 0 2.5%;
+        text-align: center;
+        @media #{$tablet}{
+            width: 95%;
+            float: none;
+            text-align: center;
+        }
+    }
+}
+
+#events-row-12 {
+    display: inline-block;
+    width: 100%;
+    height: auto;
+    position: relative;
+    padding: 2em;
+    border-bottom: 1px solid grey;
+
+    .events-row-12 {
+        width: 45%;
+        float: left;
+        display: block;
+        text-align: left;
+        margin: 0 2.5%;
+        @media #{$tablet}{
+            width: 98%;
+            float: none;
+        }
+    }
+
+    .events-row-12-image {
+        width: 45%;
+        float: right;
+        display: block;
+        margin: 0 2.5%;
+        text-align: center;
+        @media #{$tablet}{
+            width: 95%;
+            float: none;
+            text-align: center;
+        }
+
+        .wp-image-420 {
+            @media #{$tablet}{
+                display: block; 
+                margin: 0 auto;
+            }
+        }
+
+        p {
+            @media #{$tablet}{
+                text-align: center !important;
+            }
+        }
+    }
+}
+
+#events-row-13 {
+    display: inline-block;
+    width: 100%;
+    height: auto;
+    position: relative;
+    padding: 2em;
+    border-bottom: 1px solid grey;
+
+    .events-row-13-image {
+        width: 45%;
+        float: left;
+        display: block;
+        margin: 0 2.5%;
+        text-align: center;
+        @media #{$tablet}{
+            width: 95%;
+            float: none;
+            text-align: center;
+        }
+    }
+
+    p {
+        @media #{$tablet}{
+            float: none !important;
+        }
+    }
+
+    .wp-image-421 {
+        @media #{$tablet}{
+            float: none;
+            text-align: center;
+            display: block;
+            margin: 0 auto;
+        }
+    }
+
+    .events-row-13 {
+        width: 45%;
+        float: right;
+        display: block;
+        text-align: left;
+        margin: 0 2.5%;
+        @media #{$tablet}{
+            width: 98%;
+            float: none;
+        }
+    }
+}
+
+#events-row-14 {
+    display: inline-block;
+    width: 100%;
+    height: auto;
+    position: relative;
+    padding: 2em;
+    border-bottom: 1px solid grey;
+
+    .events-row-14 {
+        width: 45%;
+        float: left;
+        display: block;
+        text-align: left;
+        margin: 0 2.5%;
+        @media #{$tablet}{
+            width: 98%;
+            float: none;
+        }
+    }
+
+    .events-row-14-gallery {
+        width: 45%;
+        float: right;
+        display: block;
+        text-align: center;
+        margin: 0 2.5%;
+        @media #{$tablet}{
+            width: 98%;
+            float: none;
+        }
+
+        ul li {
+        display: block;
+        width: 100%;
+        margin: 0 1%;
+        text-align: center;
+        vertical-align: middle;
+        line-height: 12;
+        }
+    }
+}
+
+#events-row-15 {
+    display: inline-block;
+    width: 100%;
+    height: auto;
+    position: relative;
+    padding: 2em;
+    border-bottom: 1px solid grey;
+
+    .events-row-15 {
+        width: 45%;
+        float: left;
+        display: block;
+        text-align: left;
+        margin: 0 2.5%;
+        @media #{$tablet}{
+            width: 98%;
+            float: none;
+        }
+    }
+
+    .events-row-15-image {
+        width: 45%;
+        float: right;
+        display: block;
+        margin: 0 2.5%;
+        text-align: center;
+        @media #{$tablet}{
+            width: 95%;
+            float: none;
+            text-align: center;
+        }
+
+        .wp-image-425 {
+            @media #{$tablet}{
+            display: block;
+            margin: 0 auto;
+            float: none;
+            text-align: center;
+            }
+        }   
+    }
+
+
+}
+
+#events-row-16 {
+    display: inline-block;
+    width: 100%;
+    height: auto;
+    position: relative;
+    padding: 2em;
+    border-bottom: 1px solid grey;
+
+    .events-row-16-image {
+        width: 45%;
+        float: left;
+        display: block;
+        margin: 0 2.5%;
+        text-align: center;
+        @media #{$tablet}{
+            width: 95%;
+            float: none;
+            text-align: center;
+        }
+
+        .wp-image-426, .wp-image-427 {
+            @media #{$tablet}{
+                display: block;
+                margin: 0 auto;
+                float: none;
+                text-align: center;
+                clear: both;
+            }
+        }
+
+        p {
+            @media #{$tablet}{
+                width: 100%;
+            }
+        }
+    }
+
+    .events-row-16 {
+        width: 45%;
+        float: right;
+        display: block;
+        text-align: left;
+        margin: 0 2.5%;
+        @media #{$tablet}{
+            width: 98%;
+            float: none;
+        }
+    }
+
+}
+
+#events-row-17 {
+    display: inline-block;
+    width: 100%;
+    height: auto;
+    position: relative;
+    padding: 2em;
+    border-bottom: 1px solid grey;
+
+    .events-row-17-image {
+        width: 45%;
+        float: left;
+        display: block;
+        margin: 0 2.5%;
+        text-align: center;
+        padding: 2em;
+        @media #{$tablet}{
+            width: 95%;
+            float: none;
+            text-align: center;
+        }
+    }
+
+    .events-row-17 {
+        width: 45%;
+        float: right;
+        display: block;
+        text-align: left;
+        margin: 0 2.5%;
+        padding: 9em 2em;
+        @media #{$tablet}{
+            width: 98%;
+            float: none;
+            padding: 2em;
+        }
+    }
+
+}
+
+/* GALLERIES
+-------------------------------------------------------------------------------------------------*/
+body.page-template.page-template-galleries-page {
+    .footer-widgets-1, .footer-widgets-2 {
+        display: none;
+    }
+}
+
+.galleries-title {
+    text-align: center;
+    margin-top: 2em;
+}
+
+#galleries-row-1, #galleries-row-2, #galleries-row-3 {
+    display: inline-block;
+    width: 100%;
+    height: auto;
+    position: relative;
+    margin: 2em auto;
+    padding: 2em;
+    border-bottom: 1px solid grey;
+}
+
+.galleries-row-1, .galleries-row-2, .galleries-row-3 {
+    float: left;
+    display: block;
+    text-align: left;
+    width: 45%;
+    margin: 0 2.5%;
+    padding: 0 2em;
+
+    @media #{$tablet}{
+        width: 95%;
+        float: none;
+        text-align: center;
+    }
+}
+
+.galleries-row-1-image, .galleries-row-2-image, .galleries-row-3-image {
+    float: right;
+    display: block;
+    text-align: right;
+    width: 45%;
+    margin: 0 2.5%;
+    padding: 2em;
+
+    @media #{$tablet}{
+        width: 95%;
+        float: none;
+    }
+}
+/* CONTACT 
+-------------------------------------------------------------------------------------------------*/
+body.page-template.page-template-contact-page{
+
+    .content-sidebar-wrap {
+        text-align: center;
+    }
+
+    div#genesis-footer-widgets {
+        display: none;
+    }
+}
+
+.contact-title {
+    text-align: center;
+}
+
+#contact-row-1, #contact-row-3 {
+    display: inline-block;
+    max-width: 800px;
+    width: 100%;
+    height: auto;
+    position: relative;
+    margin: 2em auto;
+    padding: 2em;
+    clear: both;
+    border: 1px solid;
+    background: aliceblue;
+}
+
+.contact-row-1-image {
+    float: left;
+    display: block;
+}
+
+.contact-row-1, .contact-row-1-1 {
+    float: left;
+    display: block;
+    text-align: -webkit-auto;
+    padding: 0 1rem;
+}
+
+.contact-row-2 {
+    display: inline-block;
+    width: 100%;
+    text-align: -webkit-auto;
+    padding: 0 1rem;
+}
+
+.contact-row-3 {
+    display: block;
+    width: 100%;
+    padding: 2em;
+}
+
+.nf-form-title {
+    text-align: center;
+}
+
+input#nf-field-12, input#nf-field-8 {
+    width: 100%;
+}
+
+/* SINGLE POST
+-------------------------------------------------------------------------------------------------*/
+body.post-template-default.single.single-post{
+    .footer-widgets-1, .footer-widgets-2 {
+        display: none;
+    }
+}
+
+/* WOOCOMMERCE ORIGINAL OILS
+-------------------------------------------------------------------------------------------------*/
+body.archive.tax-product_cat.term-original-oils.woocommerce.woocommerce-page{
+    
+    .archive-title {
+    visibility: hidden;
+    }
+}
+
+/* WOOCOMMERCE ARCHIVE
+-------------------------------------------------------------------------------------------------*/
+body.archive.post-type-archive.post-type-archive-product {
+    .footer-widgets-1, .footer-widgets-2 {
+        display: none;
+    }
+}
+
+body.archive.woocommerce.woocommerce-page {
+
+    .archive-title {
+    visibility: hidden;
+    }
+}
+
+/* WOOCOMMERCE SINGLE PRODUCT
+-------------------------------------------------------------------------------------------------*/
+body.product-template-default.single.single-product {
+
+    div#genesis-footer-widgets {
+        display: none;
+    }
+}
+
+/* WOOCOMMERCE /product-category/fashion
+-------------------------------------------------------------------------------------------------*/
+body.archive.tax-product_cat.term-dh-fashions.woocommerce.woocommerce-page {
+    
+    .archive-title {
+    visibility: visible !important;
+    text-align: center;
+    }
+
+    div#genesis-footer-widgets {
+        display: none;
+    }
+
+    a.product-desc-short {
+        display: inline-block;
+        width: 100%;
+    }
+}
+
+/* WOOCOMMERCE /product-category/sold-work/
+-------------------------------------------------------------------------------------------------*/
+
+body.archive.tax-product_tag.term-sold-work, body.archive.tax-product_tag.term-available-work, body.archive.tax-product_tag.term-original-oils, body.archive.tax-product_tag.term-post-cards-from-hawaii-series {
+
+    div#genesis-footer-widgets {
+    display: none;
+    }   
+}
+
+/* WOOCOMMERCE /product-category/available-work/
+-------------------------------------------------------------------------------------------------*/
+div.product_cat-available-work {
+    div.product form.cart {
+        display: none !important
+    }
+}
+
+
+/* WOOCOMMERCE CATEGORY ARCHIVE
+-------------------------------------------------------------------------------------------------*/
+
+body.archive.tax-product_cat {
+
+    .footer-widgets-1, .footer-widgets-2 {
+        display: none;
+    }
+}
+
+
+body.archive.tax-product_cat.term-limited-edition-prints.term-14 {
+    div#genesis-footer-widget {
+        display: none;
+    }
+}
+
+/* WOOCOMMERCE CART
+-------------------------------------------------------------------------------------------------*/
+body.page-template-default.page.page-id-24 {
+
+    .footer-widgets-2, .footer-widgets-3, .after-footer {
+        display: none;
+    }
+
+    .footer-widgets {
+        padding: 0;
+    }
+
+    .footer-widgets .widget-area {
+        margin: 4rem auto 0;
+    }
+
+    .footer-widgets-1.widget-area {
+        width: 100%;
+    }
+
+    .footer-widgets-2.widget-area, .footer-widgets-3.widget-area {
+        display: none;
+    }
+}
+
+/* WOOCOMMERCE CHECKOUT
+-------------------------------------------------------------------------------------------------*/
+body.page-template-default.page.page-id-25 {
+    .footer-widgets-1, .footer-widgets-2 {
+        display: none;
+    }
+}

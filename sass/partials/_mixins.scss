@@ -1,0 +1,30 @@
+/* Transitions
+ * ========================================================================== */
+
+a,
+button,
+input:focus,
+input[type="button"],
+input[type="reset"],
+input[type="submit"],
+textarea:focus,
+.button,
+.button:after,
+.button:before,
+.genesis-nav-menu a,
+.pagination a,
+.pagination a:before,
+.pagination a:after,
+body.woocommerce-page nav.woocommerce-pagination ul li a,
+body.woocommerce-page nav.woocommerce-pagination ul li span {
+	-webkit-transition: all .2s cubic-bezier(0,1,.75,1);
+	-moz-transition:    all .2s cubic-bezier(0,1,.75,1);
+	-ms-transition:     all .2s cubic-bezier(0,1,.75,1);
+	-o-transition:      all .2s cubic-bezier(0,1,.75,1);
+	transition:         all .2s cubic-bezier(0,1,.75,1);
+}
+
+/* Media Queries
+------------------------------------------------------------------------------- */
+$tablet: "(max-width: 800px)";
+$small: "(max-width: 540px)";
